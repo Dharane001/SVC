@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;background-color: black;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(224, 15, 15);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+ /* resize: vertical; */
+}
+
+input[type=submit] {
+  background-color: #12e82b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #26e79a
+  transform: scale(1.2);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #d8cfd7;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Registration Page</h3>
+
+<div class="container">
+  <form action="details.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+
+    <label for="lname">phonenumber</label>
+    <input type="text" id="lname" name="phonenumber" placeholder="Your Phone Number">
+
+    <label for="subject">address</label>
+    <textarea id="subject" name="address" placeholder="Write Exact location" style="height:200px"></textarea>
+
+    <label for="country">PlanAMT</label>
+    <input type="number" id="country" placeholder="enter plan amount..">
+    <!-- <select id="country" name="country"> -->
+     <!-- // <option value="australia">S20 Mbps UL-599</option>
+      <option value="canada">S50 Mbps UL-799</option>
+      <option value="usa">S100 Mbps UL-999</option>
+      <option value="usa">S150 Mbps UL-1249</option>
+      <option value="usa">S500 Mbps UL-2499</option>
+      <option value="usa">S1000 Mbps UL-3999</option> -->
+    </select>
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

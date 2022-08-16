@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AuthenticateCustomer</title>
+    <!-- Our Custom CSS -->
+    <link href="payment.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Content/skin.css">
+    <link href="/Styles/MainStyles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/4316924a6f.js"></script>
+</head>
+<body>
+    <div class="modal fade" tabindex="-1" id="successModal"
+         data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <h6 id="modalMessage" class="modal-title"></h6>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="closeButton" type="button" class="btn btn-info"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-h"></div>
+    
+    
+
+<div class="loader" hidden="hidden"></div>
+
+
+<div class="container-fluid">
+    <!--Container Start-->
+    <div class="row pt-2">
+        <!--Row Start-->
+        <div class="col">
+            <h2 style="text-align:center">CABLE TV BILL PAYMENT</h2>
+            <div class="display-sec bg3">
+<form action="/" method="post"><input name="__RequestVerificationToken" type="hidden" value="UB7K-HsubnBWuZZPptH-Gc53kMw6mDH5AgtaXcz4tK7IGsW1vI6oAYHq5kOKohkJdvHu5uAzMR-z9VyaXgDJ-UpjrtMo2d6CKgNlTPn43ig1" />                    <div class="panel panel-default col-sm-6 col-sm-offset-3">
+                        <div class="panel-body col-sm-offset-1">
+                            <div class="row">
+                                <div class="col-sm-3">Customer ID</div>
+                                <div class="col-sm-5">
+                                    <input class="form-control" data-val="true" data-val-required="CustomerID is required" id="CustomerID" name="CustomerID" type="text" value="" />
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="CustomerID" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-sm-3">Password</div>
+                                <div class="col-sm-5">
+                                    <input class="form-control" data-val="true" data-val-required="Password is required" id="Password" name="Password" type="password" />
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <br />
+                            <!-- <div class="row">
+                                <div class="col-sm-3">Captcha</div>
+                                <div class="col-sm-5">
+                                    
+<script type="text/javascript">
+$(function () {$('#27a1f974336f460ebc77ed0582126f0d').show();});
+function ______372720d21e174ad58475aa64d99e93d0________() { $('#27a1f974336f460ebc77ed0582126f0d').hide(); $.post("/DefaultCaptcha/Refresh", { t: $('#CaptchaDeText').val() }, function(){$('#27a1f974336f460ebc77ed0582126f0d').show();}); return false; }</script> 
+<br/>
+<img id="CaptchaImage" src="/DefaultCaptcha/Generate?t=a50d5f537c4a4e8487063080d7ce8f6c"/><input id="CaptchaDeText" name="CaptchaDeText" type="hidden" value="a50d5f537c4a4e8487063080d7ce8f6c" /> <br/><a href="#CaptchaImage" id="27a1f974336f460ebc77ed0582126f0d" onclick="______372720d21e174ad58475aa64d99e93d0________()" style="display:none;">Reload</a><br/>Enter the text seen above<br/><input autocomplete="off" autocorrect="off" id="CaptchaInputText" name="CaptchaInputText" type="text" value="" /><br/>
+                                </div>
+                            </div>
+                            <br /> -->
+                            
+                            <div class="row">
+                                <div class="col-sm-offset-4">
+                                    <button id="LoginButton" class="btn btn-primary" onclick="">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</form>            </div>
+        </div>
+    </div>
+</div>
+<!--Page body-->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="text-center">
+     
+            </div>
+        </div>
+    </div><!--Footer End-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/Scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="/Scripts/popper.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        window.addEventListener('popstate', function (event) {
+            history.pushState(null, null, window.top.location.pathname + window.top.location.search);
+        });
+        $(document).ready(function () {
+            var DisplayModal = '';
+            var Message = '';
+            if (DisplayModal == 'yes') {
+                $('#successModal').modal('show');
+                $('#modalMessage').text(Message);
+            }
+            $('#LoginButton').click(function () {
+                $('.loader').show();
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151378786-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151378786-1');
+    </script>
+</body>
+</html>
